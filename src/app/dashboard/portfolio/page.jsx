@@ -1,4 +1,5 @@
 "use client"
+
 import DashSectionWrapper from "../components/DashSectionWrapper";
 import Button from 'react-bootstrap/Button';
 import { Suspense, useState } from "react";
