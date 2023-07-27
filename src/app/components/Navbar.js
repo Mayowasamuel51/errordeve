@@ -38,12 +38,17 @@ function Navbar(props) {
                     className={`${isMenuOpen ? "" : "hidden"
                         } absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6`}
                 >
-                    <li>
+                    {/* <li>
                         <Link href="#" className="text-sm text-gray-400 hover:text-gray-500" onClick={handleLinkClick}>
                             Home</Link>
                     
+                    </li> */}
+                    <li>
+                        <Link href="/hire" className="text-sm text-gray-400 hover:text-gray-500" onClick={handleLinkClick}>
+                            Developer's</Link>
+                    
                     </li>
-                    <li className="text-gray-300">
+                    {/* <li className="text-gray-300">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -58,13 +63,13 @@ function Navbar(props) {
                                 d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
                             />
                         </svg>
-                    </li>
+                    </li> */}
                     {/* <li>
                         <Link href="#" onClick={handleLinkClick}>
                             <Link href="#" className="text-sm text-blue-600 font-bold">About Us</Link>
                         </Link>
                     </li> */}
-                    <li className="text-gray-300">
+                    {/* <li className="text-gray-300">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -79,13 +84,13 @@ function Navbar(props) {
                                 d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
                             />
                         </svg>
-                    </li>
+                    </li> */}
                     {/* <li>
                         <Link href="#" onClick={handleLinkClick}>
                             <Link href="#" className="text-sm text-gray-400 hover:text-gray-500">Services</Link>
                         </Link>
                     </li> */}
-                    <li className="text-gray-300">
+                    {/* <li className="text-gray-300">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -100,13 +105,13 @@ function Navbar(props) {
                                 d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
                             />
                         </svg>
-                    </li>
+                    </li> */}
                     {/* <li>
                         <Link href="#" onClick={handleLinkClick}>
                             <Link href="#" className="text-sm text-gray-400 hover:text-gray-500">Pricing</Link>
                         </Link>
                     </li> */}
-                    <li className="text-gray-300">
+                    {/* <li className="text-gray-300">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -121,7 +126,7 @@ function Navbar(props) {
                                 d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
                             />
                         </svg>
-                    </li>
+                    </li> */}
                     {/* <li>
                         <Link href="#" onClick={handleLinkClick}>
                             <Link href="#" className="text-sm text-gray-400 hover:text-gray-500">Contact</Link>
@@ -129,10 +134,9 @@ function Navbar(props) {
                     </li> */}
                 </ul>
                 <Link
-                    href="#"
-                    className="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold rounded-xl transition duration-200"
-                >
-                    Post A Job
+                    href="/hire"
+                    className="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold rounded-xl transition duration-200" >
+                    Hire Me
                 </Link>
                 <Link
                     onClick={props.signIn}

@@ -5,10 +5,16 @@ import { Suspense, useState } from "react";
 import axios from "axios"
 import { ToastContainer, toast } from 'react-toastify';
 import Link from "next/link";
-
+import { useSession } from 'next-auth/react';
 
 function WebsiteUrl() {
-   
+    const { data: session } = useSession({
+        required: true,
+        onUnauthenticated() {
+            redirect('http://localhost:3000/?callbackUrl=/dashboard')
+            // redirect('https://kingshiptechnologies.com/signin?callbackUrl=/dashboard')
+        }
+    })
     const notify = () => toast.error("Error!!!", {
         position: toast.POSITION.TOP_LEFT
     });
@@ -29,7 +35,7 @@ function WebsiteUrl() {
             websiteurl: input.websiteurl,
             webname: input.webname,
             about: input.about,
-            email: user.email,
+            email:session?.user?.email,
         }
 
         axios.post(`http://localhost:3000/api/websiteurl`, data)
