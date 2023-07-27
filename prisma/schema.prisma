@@ -1,0 +1,80 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider ="mongodb"
+  url      = env("DATABASE_URL")
+}
+
+
+
+model User {
+  id             String    @id @default(auto()) @map("_id") @db.ObjectId
+  name           String?
+  email          String?   @unique
+  emailVerified  DateTime?
+  image          String?
+  createdAt      DateTime  @default(now())
+  updateAt       DateTime  @updatedAt
+  accounts       Account[]
+ 
+}
+model Account {
+  id                String  @id @default(auto()) @map("_id") @db.ObjectId
+  userId            String  @db.ObjectId
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.String
+  access_token      String? @db.String
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.String
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+
+model websiteurl {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  email      String   
+  websiteurl String?
+  webname    String?
+  about      String?
+  createdAt  DateTime @default(now())
+  updateAt   DateTime @updatedAt
+}
+
+model Api {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  email     String   @unique
+  apiname   String?
+  apikey    String?
+  createdAt DateTime @default(now())
+  updateAt  DateTime @updatedAt
+}
+
+model StoreError {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  email      String  
+  errorname  String?
+  errorcode  String?
+  errorimage String?
+  createdAt  DateTime @default(now())
+  updateAt   DateTime @updatedAt
+}
+ 
+model portfolio {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  email      String   
+  portfoillo String?
+  createdAt  DateTime @default(now())
+  updateAt   DateTime @updatedAt
+}
