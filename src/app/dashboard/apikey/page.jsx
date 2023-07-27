@@ -2,12 +2,13 @@
 import DashSectionWrapper from "../components/DashSectionWrapper";
 import { useSession } from 'next-auth/react';
 import { Suspense, useState } from "react";
-import axios from "axios"
+// import axios from "axios"
 import { Notyf } from 'notyf';
 import 'notyf/notyf.min.css'; 
 import { ToastContainer, toast } from 'react-toastify';
 import Api from "../dashboardPages/Api";
 import Link from "next/link";
+
 function Apikey() {
  
     const { data: session } = useSession({

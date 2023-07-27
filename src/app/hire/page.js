@@ -1,15 +1,15 @@
+"use client"
+import Link from "next/link";
 import "./app.css"
-
-
+import { FaWhatsapp } from "react-icons/fa"
+import main from '../asset/WhatsApp Image 2023-07-27 at 16.13.03.jpg'
+import Image from "next/image";
 
 const Hire = () => {
     return (
         <>
             <div>
-
-                <section class="background-radial-gradient mb-40 overflow-hidden">
-
-
+                <section class="background-radial-gradient overflow-hidden">
                     {/* <nav
                         class="relative flex w-full items-center justify-between bg-white py-2 shadow-sm shadow-neutral-700/10 dark:bg-neutral-800 dark:shadow-black/30  lg:flex-wrap lg:justify-start"
                         data-te-navbar-ref>
@@ -82,9 +82,6 @@ const Hire = () => {
                         </div>
 
                     </nav> */}
-
-
-
                     <div class="px-6 py-12 text-center md:px-12 lg:py-24 lg:text-left">
                         <div class="w-100 mx-auto text-neutral-800 sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
                             <div class="grid items-center gap-12 lg:grid-cols-2">
@@ -94,7 +91,7 @@ const Hire = () => {
                                         Build Your  <br /><span class="text-[hsl(218,81%,75%)]">Dream Project</span>
                                     </h1>
                                     <p class="opacity-70 text-[hsl(218,81%,85%)]">
-                                        Hire our Expert Front-end & Back-end Developers
+                                        With my expertise as a skilled software developer, I am ready to turn your vision into reality and build your dream project. Let's collaborate and create something extraordinary together!
 
 
                                     </p>
@@ -105,8 +102,10 @@ const Hire = () => {
                                     <div
                                         class="relative bg-[hsla(0,0%,100%,0.9)] backdrop-blur-[25px] backdrop-saturate-[200%] block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,15%,0.9)] dark:shadow-black/20 md:px-12">
                                         <form>
+                                        <h1 class="text-white text-center pb-12 ">Contact me</h1>
                                             <div class="grid md:grid-cols-2 md:gap-6">
                                                 <div class="relative mb-6" data-te-input-wrapper-init>
+                                                    
                                                     <input type="text"
                                                         class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                                                         id="exampleFormControlInput1" placeholder="First name" />
@@ -156,8 +155,13 @@ const Hire = () => {
                                                 class="mb-6 inline-block w-full rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
                                                 Submit
                                             </button>
-
-                                            <div class="flex justify-center">
+                                            {/* https://wa.link/6ycbll */}
+                                            <div>
+                                                <h1 className="text-white"> <Link href={'https://wa.link/6ycbll'}>
+                                                    <FaWhatsapp style={{ color: 'white' }} className="h-12" />
+                                                </Link></h1>
+                                            </div>
+                                            {/* <div class="flex justify-center">
                                                 <a href="#!" role="button"
                                                     class="action:text-primary-700 dark:action:text-primary-600 text-primary transition duration-200 ease-in-out hover:text-primary-600 focus:text-primary-600 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500">
 
@@ -199,7 +203,7 @@ const Hire = () => {
                                                         </svg>
                                                     </span>
                                                 </a>
-                                            </div>
+                                            </div> */}
                                         </form>
                                     </div>
                                 </div>
@@ -208,11 +212,14 @@ const Hire = () => {
                     </div>
 
                 </section>
+                <div>
+
+                </div>
                 <section class="bg-white dark:bg-gray-900 antialiased">
                     <div class="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
                         <div class="max-w-2xl mx-auto text-center">
                             <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
-                                Our work
+                                My  work's
                             </h2>
                             <p class="mt-4 text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">
                                 Crafted with skill and care to help our clients grow their business!
@@ -223,18 +230,18 @@ const Hire = () => {
                             <div class="space-y-4">
                                 <span
                                     class="bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
-                                    Alphabet Inc.
+                                  kingshiptechnologies
                                 </span>
                                 <h3 class="text-2xl font-bold leading-tight text-gray-900 dark:text-white">
                                     Official website
                                 </h3>
                                 <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
-                                    Flowbite helps you connect with friends, family and communities of people who share your interests.
+                                Discover essential cybersecurity tips to protect your online presence from threats in the digital age
                                 </p>
-                                <a href="#" title=""
+                                <a href="https://www.kingshiptechnologies.com/" title=""
                                     class="text-white bg-primary-700 justify-center hover:bg-primary-800 inline-flex items-center  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                                     role="button">
-                                    View case study
+                                    View
                                     <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                         fill="currentColor">
                                         <path fill-rule="evenodd"
@@ -247,18 +254,18 @@ const Hire = () => {
                             <div class="space-y-4">
                                 <span
                                     class="bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
-                                    Microsoft Corp.
+                                   codarhq
                                 </span>
                                 <h3 class="text-2xl font-bold leading-tight text-gray-900 dark:text-white">
-                                    Management system
+                                    Coding Bootcamp
                                 </h3>
                                 <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
-                                    Flowbite helps you connect with friends, family and communities of people who share your interests.
+                                    Best Coding Bootcamp in lagos and africa
                                 </p>
-                                <a href="#" title=""
+                                <a href="https://codarhq.com/" title=""
                                     class="text-white bg-primary-700 justify-center hover:bg-primary-800 inline-flex items-center  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                                     role="button">
-                                    View case study
+                                    View
                                     <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                         fill="currentColor">
                                         <path fill-rule="evenodd"
@@ -271,18 +278,18 @@ const Hire = () => {
                             <div class="space-y-4">
                                 <span
                                     class="bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
-                                    Adobe Inc.
+                                    errordeve
                                 </span>
                                 <h3 class="text-2xl font-bold leading-tight text-gray-900 dark:text-white">
-                                    Logo design
+                                 Storing your api's and Error's
                                 </h3>
                                 <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
-                                    Flowbite helps you connect with friends, family and communities of people who share your interests.
+                                Showcase your web skills to the world with a free personal website
                                 </p>
                                 <a href="#" title=""
                                     class="text-white bg-primary-700 justify-center hover:bg-primary-800 inline-flex items-center  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                                     role="button">
-                                    View case study
+                                    View
                                     <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                         fill="currentColor">
                                         <path fill-rule="evenodd"
@@ -294,6 +301,43 @@ const Hire = () => {
                         </div>
                     </div>
                 </section>
+
+
+
+                <div class="" style={{ margin: 'auto', width: '60%' }}>
+                    <section class=" text-center lg:text-left">
+                        <h2 class="mb-12 text-center text-3xl font-bold">
+                            About me
+
+                        </h2>
+
+                        <div class="container ">
+                            <div class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                                <div class="relative overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init data-te-ripple-color="light">
+                                    <Image src={main} class="w-full rounded-t-lg" />
+                                    <a href="#!">
+                                        <div
+                                            class="absolute top-0 right-0 bottom-0 left-0 h-full w-full bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,0.2)]"></div>
+                                    </a>
+                                    <svg class="absolute left-0 bottom-0 text-white dark:text-neutral-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                        <path fill="currentColor"
+                                            d="M0,288L48,256C96,224,192,160,288,160C384,160,480,224,576,213.3C672,203,768,117,864,85.3C960,53,1056,75,1152,69.3C1248,64,1344,32,1392,16L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="p-6">
+                                    {/* <h5 class="mb-4 text-lg font-bold">Camping travel</h5> */}
+                                    <p class="mb-6">
+                                        As a full-stack developer, I pride myself on being a versatile and well-rounded professional, proficient in both front-end and back-end technologies. With a passion for problem-solving and a keen eye for detail, I strive to create seamless and user-friendly applications that make a positive impact on users' lives.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
             </div>
         </>
     )
