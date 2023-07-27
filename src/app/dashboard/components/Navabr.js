@@ -43,9 +43,9 @@ const Navabr = (props) => {
             <Link href="/dashboard/portfolio" className="text-base">
               Add Portfoillo's website
             </Link>
-            <Link href="/dashboard/portfolio" className="text-base">
+            {/* <Link href="/dashboard/portfolio" className="text-base">
              Todo List
-            </Link>
+            </Link> */}
             <Link href="/dashboard/apikey" className="text-base">
              Api key's
             </Link>

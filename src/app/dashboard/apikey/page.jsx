@@ -37,7 +37,7 @@ function Apikey() {
         }
         axios.post(`http://localhost:3000/api/apikey`, data)
             .then((res) => {
-                good()
+              alert("Added successfully")
             }).catch((err) => {
                 console.log(err)
                 notify()
@@ -49,7 +49,7 @@ function Apikey() {
                 <h1 className="text-center font-semibold pt-4 text-white">Store Api Key's </h1>
                 <br/> <br/>
                 <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                    <ToastContainer/>
+                  
                     <form onSubmit={apikeyhandle} >
                         <div className="mb-4">
                             <label className="block text-gray-700 text-sm font-bold mb-2" >

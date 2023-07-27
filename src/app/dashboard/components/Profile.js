@@ -103,25 +103,25 @@ const Profile = (props) => {
         <div className="mt-3">
           <ul className="list-none leading-10">
             <li className="hover:bg-slate-200 hover:px-2 transition">
-              <Link href="/dashboard/rules" className="text-[12px]">
-                Our Rules
-              </Link>
+            <Link href="/dashboard/websiteurl" className="text-base">
+             Keep website Url's 
+            </Link>
             </li>
             <li className="hover:bg-slate-200 hover:px-2 transition">
-              <Link href="/dashboard/settings" className="text-[12px]">
-                Settings
-              </Link>
+            <Link href="/dashboard/portfolio" className="text-base">
+              Add Portfoillo's website
+            </Link>
             </li>
             <li className="hover:bg-slate-200 hover:px-2 transition">
-              <Link href="/dashboard/question" className="text-[12px]">
-                Comment
-              </Link>
+            <Link href="/dashboard/apikey" className="text-base">
+             Api key's
+            </Link>
             </li>
-            <li className="hover:bg-slate-200 hover:px-2 transition">
+            {/* <li className="hover:bg-slate-200 hover:px-2 transition">
               <Link href="#" className="text-[12px]">
                 Timetable
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
@@ -129,21 +129,21 @@ const Profile = (props) => {
 
         <div className="mt-3">
           <ul className="list-none leading-10">
-            <li className="hover:bg-slate-200 hover:px-2 transition">
+            {/* <li className="hover:bg-slate-200 hover:px-2 transition">
               <Link href={"/"} className="text-[12px]">
                 Review
               </Link>
-            </li>
-            <li className="hover:bg-slate-200 hover:px-2 transition">
+            </li> */}
+            {/* <li className="hover:bg-slate-200 hover:px-2 transition">
               <Link href={"/"} className="text-[12px]">
                 Payments
               </Link>
-            </li>
-            <li className="hover:bg-slate-200 hover:px-2 transition">
+            </li> */}
+            {/* <li className="hover:bg-slate-200 hover:px-2 transition">
               <Link href={"/"} className="text-[12px]">
                 Ask a question
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 

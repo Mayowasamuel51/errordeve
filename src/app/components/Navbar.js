@@ -43,11 +43,11 @@ function Navbar(props) {
                             Home</Link>
                     
                     </li> */}
-                    <li>
+                    {/* <li>
                         <Link href="/hire" className="text-sm text-gray-400 hover:text-gray-500" onClick={handleLinkClick}>
                             Developer's</Link>
                     
-                    </li>
+                    </li> */}
                     {/* <li className="text-gray-300">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

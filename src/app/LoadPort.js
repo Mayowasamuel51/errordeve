@@ -1,9 +1,9 @@
 'use client'
 // import a from 'next/a';
 import { useState } from 'react';
-function PortLink({ port }) {
+function LoadPort({ port }) {
     const [currentpage, setCurrentpage] = useState(1)
-    const recordPerpage = 3;
+    const recordPerpage = 20;
     const lastindex = currentpage * recordPerpage;
     const firstindex = lastindex - recordPerpage;
     const records = port.slice(firstindex, lastindex)
@@ -37,9 +37,7 @@ function PortLink({ port }) {
                             {/* <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
                                 Api Key
                             </th> */}
-                            <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
-                                Date
-                            </th>
+                        
 
                         </tr>
                     </thead>
@@ -63,10 +61,7 @@ function PortLink({ port }) {
                                     </td>
 
                                 
-                                    <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm ">
-                                        <p className="text-gray-900 whitespace-no-wrap">{item.createdAt}</p>
-                                    </td>
-
+                                  
 
                                 </tr>
 
@@ -118,4 +113,4 @@ function PortLink({ port }) {
     )
 }
 
-export default PortLink
+export default LoadPort
