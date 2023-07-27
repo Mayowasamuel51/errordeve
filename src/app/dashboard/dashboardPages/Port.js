@@ -9,29 +9,6 @@ import { redirect } from 'next/navigation';
 import { useState, useEffect, Suspense } from "react";
 import PortLink from "../components/PortLink";
 
-// async function fetchport() {
-//     const response = await fetch('http://localhost:3000/api/portfoillo', {
-//         next: { revalidate: 20 }
-//     })
-//     try {
-//         if (!response.ok) {
-//             if (response.status === 404) {
-//                 return <NetworkError />
-//                 throw new Error('Resource not found');
-//             } else if (response.status === 500) {
-//                 return <NetworkError />
-//                 throw new Error('Internal server error');
-//             } else {
-//                 return <NetworkError />
-//                 throw new Error('Unknown server error');
-//             }
-//         }
-//         const data = await response.json()
-//         return data.data
-//     } catch (err) {
-//         return <NetworkError />
-//     }
-// }
 
 function Ports() {
     const { data: session } = useSession({
