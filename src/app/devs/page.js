@@ -9,8 +9,8 @@ async function fetchports() {
     }
     return data.data
 }
-const Dev = async () => {
-    // const portsee = await fetchports()
+async function Dev(){
+    const portsee = await fetchports()
     return (
         <>
             <div>
