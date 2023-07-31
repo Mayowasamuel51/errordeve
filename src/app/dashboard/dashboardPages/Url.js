@@ -14,7 +14,6 @@ import WebsiteUrl from '../components/WebsiteUrl';
         required: true,
         onUnauthenticated() {
             redirect('http://localhost:3000/?callbackUrl=/dashboard')
-            // redirect('https://kingshiptechnologies.com/signin?callbackUrl=/dashboard')
         }
     })
     const [maindata, setData] = useState([])

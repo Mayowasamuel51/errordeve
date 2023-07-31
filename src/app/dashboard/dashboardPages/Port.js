@@ -15,9 +15,9 @@ function Ports() {
         required: true,
         onUnauthenticated() {
             redirect('http://localhost:3000/?callbackUrl=/dashboard')
-            // redirect('https://kingshiptechnologies.com/signin?callbackUrl=/dashboard')
         }
     })
+    
     const [maindata, setData] = useState([])
     const url = `http://localhost:3000/api/portfoillo/port?query=${session?.user?.email}`
     // const fetcher = url => axios.get(url).then(res => res.data.data)

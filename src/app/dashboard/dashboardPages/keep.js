@@ -7,16 +7,15 @@ import useSWR from 'swr'
 // import axios from 'axios';
 import { redirect } from 'next/navigation';
 import { useState, useEffect, Suspense } from "react";
-function Api() {
+function Api({ email }) {
     const { data: session } = useSession({
         required: true,
         onUnauthenticated() {
             redirect('http://localhost:3000/?callbackUrl=/dashboard')
+            // redirect('https://kingshiptechnologies.com/signin?callbackUrl=/dashboard')
         }
     })
     const [maindata, setData] = useState([])
-    
-
     const url = `http://localhost:3000/api/apikey/email?query=${session?.user?.email}`
     // const fetcher = url => axios.get(url).then(res => res.data.data)
     const fetcher = (...args) => fetch(...args).then((res) => {

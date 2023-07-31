@@ -8,7 +8,7 @@ const DashSectionWrapper = (Component) =>
         const { data: session } = useSession({
             required: true,
             onUnauthenticated() {
-              redirect('http://localhost:3000?callbackUrl=/dashboard')
+                redirect('http://localhost:3000/?callbackUrl=/dashboard')
             //   redirect('https://www.kingshiptechnologies.com/signin?callbackUrl=/dashboard')
             } // to redirect back if user not auth well 
           })

@@ -12,7 +12,6 @@ function PortfoilloPage() {
         required: true,
         onUnauthenticated() {
             redirect('http://localhost:3000/?callbackUrl=/dashboard')
-            // redirect('https://kingshiptechnologies.com/signin?callbackUrl=/dashboard')
         }
     })
   
@@ -39,7 +38,7 @@ function PortfoilloPage() {
             .then((res) => {
                
                     good()
-                    alert('done!!!')
+                    alert('Added successfully!!!')
               
             }
             ).catch((err) => {

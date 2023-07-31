@@ -15,7 +15,6 @@ function Apikey() {
         required: true,
         onUnauthenticated() {
             redirect('http://localhost:3000/?callbackUrl=/dashboard')
-            // redirect('https://kingshiptechnologies.com/signin?callbackUrl=/dashboard')
         }
     })
  
