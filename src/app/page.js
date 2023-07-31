@@ -1,6 +1,6 @@
 'use client'
 import { Suspense, useEffect, useState } from 'react'
-import { useRouter } from "next/navigation"
+import { redirect, useRouter } from "next/navigation"
 import Navbar from "./components/Navbar"
 import { useSession, signIn } from 'next-auth/react'
 import PortSee from './PortSee'
@@ -10,7 +10,8 @@ function Home() {
   const router = useRouter()
   useEffect(() => {
     if (session?.status === 'authenticated') {
-      router.push('http://localhost:3000/dashboard')
+      // router('http://localhost:3000/dashboard')
+      redirect('http://localhost:3000/dashboard')
      
     }
   }, [])
