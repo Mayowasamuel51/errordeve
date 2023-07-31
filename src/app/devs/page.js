@@ -9,7 +9,6 @@ async function fetchports() {
     }
     return data.data
 }
-
 const Dev = async () => {
     const portsee = await fetchports()
     return (
@@ -18,7 +17,7 @@ const Dev = async () => {
                 <div className='container mt-4'>
                     <h2 className='text-center text-xl font-bold'>Developer's Portfolios</h2>
                     {/* <Suspense fallback={<h2>LOADING PLEASE WAIT............</h2>}> */}
-                        <LoadPort port={portsee} />
+                        {/* <LoadPort port={portsee} /> */}
                     {/* </Suspense> */}
 
                 </div>
