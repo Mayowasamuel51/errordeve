@@ -18,13 +18,13 @@ const JqQ = () => {
       //   }
       // })
     
-    const handleSignIn = () => {
-      signIn('google', { callbackUrl: 'http://localhost:3000/dashboard' }); // Initiates the Google login flow
-    };
+    // const handleSignIn = () => {
+    //   signIn('google', { callbackUrl: 'http://localhost:3000/dashboard' }); // Initiates the Google login flow
+    // };
     return ( 
         <>
          <div>
-        {session?.status === "authenticated" ? <Navbar signIn={handleSignIn} /> : <Navbar signIn={handleSignIn} />}
+        {/* {session?.status === "authenticated" ? <Navbar signIn={handleSignIn} /> : <Navbar signIn={handleSignIn} />} */}
 
         <div className='container mt-4'>
           <h2 className='text-center text-xl font-bold'>Developer's Portfolios</h2>
