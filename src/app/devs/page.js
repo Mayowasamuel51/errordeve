@@ -18,7 +18,7 @@ async function Dev(){
                 <div className='container mt-4'>
                     <h2 className='text-center text-xl font-bold'>Developer's Portfolios</h2>
 
-                        {/* <LoadPort port={portsee} /> */}
+                        <LoadPort port={portsee} />
                    
 
                 </div>
