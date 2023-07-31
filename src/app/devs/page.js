@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import LoadPort from "../LoadPort"
 import NetworkError from "../NetworkError"
 
-async function fetchPorts() {
+async function Ports() {
     const res = await fetch(`http://localhost:3000/api/portfoillo`);
     const data = await res.json();
     if (!res.ok) {
@@ -11,7 +11,7 @@ async function fetchPorts() {
     return data.data;
   }
 async function Dev(){
-    // const portsee = await fetchPorts()
+    const portsee = await Ports()
     return (
         <>
             <div>
