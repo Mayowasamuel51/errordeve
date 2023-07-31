@@ -66,7 +66,7 @@ function PortfoilloPage() {
 
                             <div className="flex items-center justify-between">
                                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-                                    Store Api
+                                    Store Portfoillo
                                 </button>
 
                             </div>
@@ -75,7 +75,7 @@ function PortfoilloPage() {
                     </div>
 
                 </form>
-                <Link href="/dashboard/portfolio/port"  className="bg-black-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">view portfoillo</Link>
+                <Link href="/dashboard/portfolio/port"  className="bg-black-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">view portfoillo's</Link>
 
             </div>
             <hr />

@@ -5,6 +5,9 @@ export async function GET() {
     const data = await prisma.portfolio.findMany({
     orderBy: {id: 'desc'} 
     }) // this code will get the lastest 
+    if (!data) {
+        return NextResponse.json({ error:'Error with network ', status:404 })
+    }
     return NextResponse.json({ data: data, status: 200 })
 }
 export async function POST(req) {

@@ -38,17 +38,11 @@ function Navbar(props) {
                     className={`${isMenuOpen ? "" : "hidden"
                         } absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6`}
                 >
-                    {/* <li>
-                        <Link href="#" className="text-sm text-gray-400 hover:text-gray-500" onClick={handleLinkClick}>
-                            Home</Link>
-                    
-                    </li> */}
-                    {/* <li>
-                        <Link href="/hire" className="text-sm text-gray-400 hover:text-gray-500" onClick={handleLinkClick}>
-                            Developer's</Link>
-                    
-                    </li> */}
-                    {/* <li className="text-gray-300">
+                    <li>
+                        <Link href="#" className="font-bold text-sm text-gray-400 hover:text-gray-500" onClick={handleLinkClick}>
+                            React Errors</Link>
+                    </li>
+                    <li className="text-gray-300">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -63,12 +57,35 @@ function Navbar(props) {
                                 d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
                             />
                         </svg>
-                    </li> */}
-                    {/* <li>
-                        <Link href="#" onClick={handleLinkClick}>
-                            <Link href="#" className="text-sm text-blue-600 font-bold">About Us</Link>
-                        </Link>
-                    </li> */}
+                    </li>
+                    <li>
+                        <Link href="/hire" className="font-bold text-sm text-gray-400 hover:text-gray-500" onClick={handleLinkClick}>
+                            How To</Link>
+                    
+                    </li>
+                    <li className="text-gray-300">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            stroke="currentColor"
+                            className="w-4 h-4 current-fill"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                            />
+                        </svg>
+                    </li>
+                 
+                    <li>
+                        <Link href="/hire" className="font-bold text-sm text-gray-400 hover:text-gray-500" onClick={handleLinkClick}>
+                        Jobs</Link>
+                    
+                    </li>
+                  
                     {/* <li className="text-gray-300">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

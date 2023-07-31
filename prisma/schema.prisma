@@ -78,3 +78,12 @@ model portfolio {
   createdAt  DateTime @default(now())
   updateAt   DateTime @updatedAt
 }
+
+
+model profile {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  email      String   
+  profile String?
+  createdAt  DateTime @default(now())
+  updateAt   DateTime @updatedAt
+}
