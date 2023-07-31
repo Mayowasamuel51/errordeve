@@ -10,14 +10,14 @@ import ErrorBoundary from '../ErrorBoundary'
 const JqQ = () => {
     const session = useSession()
     const router = useRouter()
-    if (process.env.NODE_ENV === "development") {
+  
       useEffect(() => {
         if (session?.status === 'authenticated') {
           router.push('http://localhost:3000/dashboard')
           // redirect('http://localhost:3000/dashboard')
         }
       })
-    }
+    
     const handleSignIn = () => {
       signIn('google', { callbackUrl: 'http://localhost:3000/dashboard' }); // Initiates the Google login flow
     };
