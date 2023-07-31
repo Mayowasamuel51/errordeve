@@ -1,5 +1,5 @@
 'use client'
-import { Suspense, useEffect, useState } from 'react'
+import { Suspense, useEffect } from 'react'
 import { redirect, useRouter } from "next/navigation"
 import Navbar from "./components/Navbar"
 import { useSession, signIn } from 'next-auth/react'
@@ -9,10 +9,13 @@ function Home() {
   const session = useSession()
   const router = useRouter()
   useEffect(() => {
-    if (session?.status === 'authenticated') {
-      // router('http://localhost:3000/dashboard')
-      redirect('http://localhost:3000/dashboard')
-     
+   
+    if (process.env.NODE_ENV === "development") {
+      if (session?.status === 'authenticated') {
+        // router('http://localhost:3000/dashboard')
+        redirect('http://localhost:3000/dashboard')
+       
+      }
     }
   }, [])
   const handleSignIn = () => {
