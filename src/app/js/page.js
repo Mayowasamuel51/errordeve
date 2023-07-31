@@ -13,8 +13,8 @@ const JqQ = () => {
     if (process.env.NODE_ENV === "development") {
       useEffect(() => {
         if (session?.status === 'authenticated') {
-          // router('http://localhost:3000/dashboard')
-          redirect('http://localhost:3000/dashboard')
+          router.push('http://localhost:3000/dashboard')
+          // redirect('http://localhost:3000/dashboard')
         }
       })
     }
