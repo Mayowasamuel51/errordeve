@@ -11,16 +11,16 @@ const JqQ = () => {
     const session = useSession()
     const router = useRouter()
   
-      // useEffect(() => {
-      //   if (session?.status === 'authenticated') {
-      //     router.push('http://localhost:3000/dashboard')
-      //     // redirect('http://localhost:3000/dashboard')
-      //   }
-      // })
+      useEffect(() => {
+        if (session?.status === 'authenticated') {
+          router.push('http://localhost:3000/dashboard')
+          // redirect('http://localhost:3000/dashboard')
+        }
+      })
     
-    // const handleSignIn = () => {
-    //   signIn('google', { callbackUrl: 'http://localhost:3000/dashboard' }); // Initiates the Google login flow
-    // };
+    const handleSignIn = () => {
+      signIn('google', { callbackUrl: 'http://localhost:3000/dashboard' }); // Initiates the Google login flow
+    };
     return ( 
         <>
          <div>
