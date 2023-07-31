@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar"
 import { useSession, signIn, signOut } from 'next-auth/react'
 import PortSee from './PortSee'
 import ErrorBoundary from './ErrorBoundary'
-export default function Home() {
+function Home() {
   const session = useSession()
   const router = useRouter()
   useEffect(() => {
@@ -37,3 +37,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home;
