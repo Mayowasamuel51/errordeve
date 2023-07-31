@@ -10,7 +10,6 @@ export default function Home() {
   const router = useRouter()
   useEffect(() => {
     if (session?.status === 'authenticated') {
-      // localStorage.setItem('email',session?.)
       router.push('http://localhost:3000/dashboard')
       // router.push('https://kingshiptechnologies.com/dashboard')     
     }
