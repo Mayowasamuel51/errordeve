@@ -9,8 +9,16 @@ async function fetchports() {
     }
     return data.data
 }
+async function fetchPorts() {
+    const res = await fetch(`http://localhost:3000/api/portfoillo`);
+    const data = await res.json();
+    if (!res.ok) {
+      return <NetworkError />;
+    }
+    return data.data;
+  }
 async function Dev(){
-    const portsee = await fetchports()
+    const portsee = await fetchPorts()
     return (
         <>
             <div>
