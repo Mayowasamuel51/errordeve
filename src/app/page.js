@@ -18,7 +18,7 @@ function Home() {
     })
   }
   const handleSignIn = () => {
-    signIn('google', { callbackUrl: 'http://localhost:3000/dashboard' }); // Initiates the Google login flow
+    signIn('google', { callbackUrl: 'http://localhost:3000/dashboard' }); // Initiates the Google login 
   };
 
   return (
