@@ -11,11 +11,11 @@ export default function Home() {
   useEffect(() => {
     if (session?.status === 'authenticated') {
       router.push('http://localhost:3000/dashboard')
-      // router.push('https://kingshiptechnologies.com/dashboard')     
+     
     }
   })
   const handleSignIn = () => {
-    // signIn('google',{callbackUrl:'https://kingshiptechnologies.com/dashboard'});
+ 
     signIn('google', { callbackUrl: 'http://localhost:3000/dashboard' }); // Initiates the Google login flow
   };
 
