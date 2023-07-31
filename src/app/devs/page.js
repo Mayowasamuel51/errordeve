@@ -1,14 +1,14 @@
 import { Suspense } from 'react'
 import LoadPort from "../LoadPort"
 import NetworkError from "../NetworkError"
-// async function fetchports() {
-//     const res = await fetch(`http://localhost:3000/api/portfoillo`)
-//     const data = await res.json()
-//     if (!res.ok) {
-//         return <NetworkError />
-//     }
-//     return data.data
-// }
+async function fetchports() {
+    const res = await fetch(`http://localhost:3000/api/portfoillo`)
+    const data = await res.json()
+    if (!res.ok) {
+        return <NetworkError />
+    }
+    return data.data
+}
 const Dev = async () => {
     // const portsee = await fetchports()
     return (
