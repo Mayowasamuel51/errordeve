@@ -11,7 +11,7 @@ async function fetchPorts() {
     return data.data;
   }
 async function Dev(){
-    const portsee = await fetchPorts()
+    // const portsee = await fetchPorts()
     return (
         <>
             <div>
