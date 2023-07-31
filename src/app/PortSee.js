@@ -1,4 +1,4 @@
-import { Suspense } from "react"
+
 import LoadPort from "./LoadPort"
 
 import NetworkError from "./NetworkError"
@@ -17,9 +17,9 @@ const PortSee = async () => {
     console.log(portsee)
     return (
         <>
-            <Suspense fallback={<h1>loading.......</h1>}>
+         
                     <LoadPort port={portsee}/>
-            </Suspense>
+       
         </>
     )
 }
