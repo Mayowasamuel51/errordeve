@@ -3,7 +3,6 @@ import { Suspense, useEffect } from 'react'
 import { redirect, useRouter } from "next/navigation"
 import Navbar from "./components/Navbar"
 import { useSession, signIn } from 'next-auth/react'
-import PortSee from './PortSee'
 import ErrorBoundary from './ErrorBoundary'
 import Link from 'next/link'
 function Home() {
