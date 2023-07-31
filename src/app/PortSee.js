@@ -6,7 +6,7 @@ import NetworkError from "./NetworkError"
 async function fetchports() {
     const res = await fetch('http://localhost:3000/api/portfoillo')
     const data = await res.json()
-    if (res.status.status  === 'error') {
+    if (!res.ok) {
         return <NetworkError/>
     }
     return data.data
