@@ -7,10 +7,11 @@ const Dev = () => {
             <div>
                 <div className='container mt-4'>
                     <h2 className='text-center text-xl font-bold'>Developer's Portfolios</h2>
-{/* 
+                    {/* 
                     <Suspense fallback={<h2>LOADING PLEASE WAIT............</h2>}>
                         <PortSee />
                     </Suspense> */}
+                    <PortSee />
                 </div>
             </div>
         </>
