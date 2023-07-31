@@ -8,16 +8,14 @@ import ErrorBoundary from './ErrorBoundary'
 function Home() {
   const session = useSession()
   const router = useRouter()
-  useEffect(() => {
-   
-    if (process.env.NODE_ENV === "development") {
+  if (process.env.NODE_ENV === "development") {
+    useEffect(() => {
       if (session?.status === 'authenticated') {
         // router('http://localhost:3000/dashboard')
         redirect('http://localhost:3000/dashboard')
-       
       }
-    }
-  }, [])
+    })
+  }
   const handleSignIn = () => {
     signIn('google', { callbackUrl: 'http://localhost:3000/dashboard' }); // Initiates the Google login flow
   };
