@@ -29,6 +29,7 @@ async function getServerSideProps() {
 }
 async function Dev(props) {
   const portsee = await Ports()
+  console.log(portsee)
   return (
     <>
       <div>
