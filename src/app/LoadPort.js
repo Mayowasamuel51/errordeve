@@ -43,7 +43,8 @@ function LoadPort({ port }) {
                     </thead>
 
                     <tbody >
-                        {records.map((item) => {
+                        {records
+                        .map((item) => {
                             return (
 
                                 <tr key={item.id}>
