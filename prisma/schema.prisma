@@ -6,23 +6,21 @@ generator client {
 }
 
 datasource db {
-  provider ="mongodb"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
 }
 
-
-
 model User {
-  id             String    @id @default(auto()) @map("_id") @db.ObjectId
-  name           String?
-  email          String?   @unique
-  emailVerified  DateTime?
-  image          String?
-  createdAt      DateTime  @default(now())
-  updateAt       DateTime  @updatedAt
-  accounts       Account[]
- 
+  id            String    @id @default(auto()) @map("_id") @db.ObjectId
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  createdAt     DateTime  @default(now())
+  updateAt      DateTime  @updatedAt
+  accounts      Account[]
 }
+
 model Account {
   id                String  @id @default(auto()) @map("_id") @db.ObjectId
   userId            String  @db.ObjectId
@@ -41,10 +39,9 @@ model Account {
   @@unique([provider, providerAccountId])
 }
 
-
 model websiteurl {
   id         String   @id @default(auto()) @map("_id") @db.ObjectId
-  email      String   
+  email      String
   websiteurl String?
   webname    String?
   about      String?
@@ -63,27 +60,26 @@ model Api {
 
 model StoreError {
   id         String   @id @default(auto()) @map("_id") @db.ObjectId
-  email      String  
+  email      String
   errorname  String?
   errorcode  String?
   errorimage String?
   createdAt  DateTime @default(now())
   updateAt   DateTime @updatedAt
 }
- 
+
 model portfolio {
   id         String   @id @default(auto()) @map("_id") @db.ObjectId
-  email      String   
+  email      String
   portfoillo String?
   createdAt  DateTime @default(now())
   updateAt   DateTime @updatedAt
 }
 
-
 model profile {
-  id         String   @id @default(auto()) @map("_id") @db.ObjectId
-  email      String   
-  profile String?
-  createdAt  DateTime @default(now())
-  updateAt   DateTime @updatedAt
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  email     String
+  profile   String?
+  createdAt DateTime @default(now())
+  updateAt  DateTime @updatedAt
 }

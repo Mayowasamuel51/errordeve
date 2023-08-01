@@ -3,7 +3,7 @@
 import { useState } from 'react';
 function LoadPort({ port }) {
     const [currentpage, setCurrentpage] = useState(1)
-    const recordPerpage = 20;
+    const recordPerpage = 10;
     const lastindex = currentpage * recordPerpage;
     const firstindex = lastindex - recordPerpage;
     const records = port.slice(firstindex, lastindex)
