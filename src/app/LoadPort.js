@@ -44,16 +44,17 @@ function LoadPort({ port }) {
 
                     <tbody >
                         {records
-                        .map((item) => {
+                        .map((item, index) => {
                             return (
 
-                                <tr key={item.id}>
+                                <tr key={index}>
                                     <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                         <div className="flex">
 
                                             <div className="ml-3">
                                                
                                                 <a href={`${item.portfoillo}`} className="text-gray-900 whitespace-no-wrap">
+                                                    {item.portfoillo}
                                                     {item.portfoillo}
                                                 </a>
 
