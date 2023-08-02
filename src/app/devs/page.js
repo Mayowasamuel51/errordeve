@@ -3,13 +3,13 @@ import LoadPort from '../LoadPort';
 import NetworkError from "../NetworkError"
 
 async function Ports() {
-  const res = await fetch(`http://localhost:3000/api/port`,{
+  const response = await fetch(`http://localhost:3000/api/port`,{
     next:{ revalidate: 10 } 
  });
-  if (!res.ok) {
+  if (!response.ok) {
     return <NetworkError />;
   }
-  const data = await res.json();
+  const data = await response.json();
   return data.data
 }
 
