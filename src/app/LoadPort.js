@@ -55,7 +55,7 @@ function LoadPort({ port }) {
                                                
                                                 <a href={`${item.portfoillo}`} className="text-gray-900 whitespace-no-wrap">
                                                     {item.portfoillo}
-                                                    {item.portfoillo}
+                                                    
                                                 </a>
 
                                             </div>
