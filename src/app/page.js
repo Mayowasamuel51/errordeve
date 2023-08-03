@@ -8,14 +8,14 @@ import Link from 'next/link'
 function Home() {
   const session = useSession()
   const router = useRouter()
-  if (process.env.NODE_ENV === "development") {
+  
     useEffect(() => {
       if (session?.status === 'authenticated') {
         // router('http://localhost:3000/dashboard')
         redirect('https://errordeve.vercel.app/dashboard')
       }
     })
-  }
+  
   const handleSignIn = () => {
     signIn('google', { callbackUrl: 'https://errordeve.vercel.app/dashboard' });
     // signIn('google', { callbackUrl: 'http://localhost:3000/dashboard' }); // Initiates the Google login 
