@@ -30,8 +30,8 @@ async function Ports() {
 
 
 async function Dev(props) {
-  const portsee = await Ports()
-  console.log(portsee)
+  // const portsee = await Ports()
+  // console.log(portsee)
   return (
    
       <div>
