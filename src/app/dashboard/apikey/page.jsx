@@ -14,7 +14,8 @@ function Apikey() {
     const { data: session } = useSession({
         required: true,
         onUnauthenticated() {
-            redirect('http://localhost:3000/?callbackUrl=/dashboard')
+            redirect('https://errordeve.vercel.app/?callbackUrl=/dashboard')
+            // redirect('http://localhost:3000/?callbackUrl=/dashboard')
         }
     })
  
@@ -34,7 +35,7 @@ function Apikey() {
             apikey: input.apikey,
             email: session?.user?.email,
         }
-        axios.post(`http://localhost:3000/api/apikey`, data)
+        axios.post(`/api/apikey`, data)
             .then((res) => {
               alert("Added successfully")
             }).catch((err) => {

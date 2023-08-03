@@ -16,8 +16,10 @@ import WebsiteUrl from '../components/WebsiteUrl';
             redirect('http://localhost:3000/?callbackUrl=/dashboard')
         }
     })
-    const [maindata, setData] = useState([])
-    const url = `http://localhost:3000/api/websiteurl/url?query=${session?.user?.email}`
+     const [maindata, setData] = useState([])
+    
+    // const url = `http://localhost:3000/api/websiteurl/url?query=${session?.user?.email}`
+    const url = ` https://errordeve.vercel.app/api/websiteurl/url?query=${session?.user?.email}`
     // const fetcher = url => axios.get(url).then(res => res.data.data)
     const fetcher = (...args) => fetch(...args).then((res) => {
         return res.json()

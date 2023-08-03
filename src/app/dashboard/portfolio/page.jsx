@@ -11,7 +11,8 @@ function PortfoilloPage() {
     const { data: session } = useSession({
         required: true,
         onUnauthenticated() {
-            redirect('http://localhost:3000/?callbackUrl=/dashboard')
+            redirect('https://errordeve.vercel.app/?callbackUrl=/dashboard')
+            // redirect('http://localhost:3000/?callbackUrl=/dashboard')
         }
     })
   
@@ -34,7 +35,7 @@ function PortfoilloPage() {
             email: session?.user?.email,
         }
 
-        axios.post(`http://localhost:3000/api/portfoillo`, data)
+        axios.post(`/api/portfoillo`, data)
             .then((res) => {
                
                     good()

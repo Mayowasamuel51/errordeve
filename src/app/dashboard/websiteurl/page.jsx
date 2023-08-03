@@ -12,7 +12,8 @@ function WebsiteUrl() {
     const { data: session } = useSession({
         required: true,
         onUnauthenticated() {
-            redirect('http://localhost:3000/?callbackUrl=/dashboard')
+            redirect('https://errordeve.vercel.app/?callbackUrl=/dashboard')
+            // redirect('http://localhost:3000/?callbackUrl=/dashboard')
             // redirect('https://kingshiptechnologies.com/signin?callbackUrl=/dashboard')
         }
     })
@@ -39,7 +40,7 @@ function WebsiteUrl() {
             email:session?.user?.email,
         }
 
-        axios.post(`http://localhost:3000/api/websiteurl`, data)
+        axios.post(`/api/websiteurl`, data)
             .then((res) => {
                 good()
                 alert('done!!!')

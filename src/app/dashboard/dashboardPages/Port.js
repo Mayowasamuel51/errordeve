@@ -20,7 +20,9 @@ function Ports() {
     })
 
     const [maindata, setData] = useState([])
-    const url = `http://localhost:3000/api/portfoillo/port?query=${session?.user?.email}`
+    // 
+    // const url = `http://localhost:3000/api/portfoillo/port?query=${session?.user?.email}`
+        const url = `https://errordeve.vercel.app/api/portfoillo/port?query=${session?.user?.email}`
     // const fetcher = url => axios.get(url).then(res => res.data.data)
     const fetcher = (...args) => fetch(...args).then((res) => {
         return res.json()
