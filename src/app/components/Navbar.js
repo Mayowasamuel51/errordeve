@@ -79,7 +79,7 @@ function Navbar(props) {
                         </svg>
                     </li>
                     <li>
-                        <Link href="/hire" className="font-bold text-sm text-gray-400 hover:text-gray-500" onClick={handleLinkClick}>
+                        <Link href="/" className="font-bold text-sm text-gray-400 hover:text-gray-500" onClick={handleLinkClick}>
                             How To</Link>
                     
                     </li>
@@ -101,7 +101,7 @@ function Navbar(props) {
                     </li>
                  
                     <li>
-                        <Link href="/hire" className="font-bold text-sm text-gray-400 hover:text-gray-500" onClick={handleLinkClick}>
+                        <Link href="/" className="font-bold text-sm text-gray-400 hover:text-gray-500" onClick={handleLinkClick}>
                         Jobs</Link>
                     
                     </li>
