@@ -8,8 +8,8 @@ const DashSectionWrapper = (Component) =>
         const { data: session } = useSession({
             required: true,
             onUnauthenticated() {
-                // redirect('http://localhost:3000/?callbackUrl=/dashboard')
-                redirect('https://errordeve.vercel.app/?callbackUrl=/dashboard')
+                redirect('http://localhost:3000/?callbackUrl=/dashboard')
+                // redirect('https://errordeve.vercel.app/?callbackUrl=/dashboard')
             } // to redirect back if user not auth well 
           })
         return (

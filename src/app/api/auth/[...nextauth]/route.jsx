@@ -17,10 +17,10 @@ export const authOptions = {
         expires: '12d'
     },
     pages: {
-        // signIn: 'http://localhost:3000/',
-        signIn: "https://errordeve.vercel.app/signin",
-        // signOut: 'http://localhost:3000/',
-        signOut:'https://errordeve.vercel.app',
+        signIn: 'http://localhost:3000/',
+        // signIn: "https://errordeve.vercel.app/signin",
+        signOut: 'http://localhost:3000/',
+        // signOut:'https://errordeve.vercel.app',
         error: '/auth/error', // Error code passed in query string as ?error=  build a better error page
         // verifyRequest: '/auth/verify-request', // (used for check email message)
         // newUser: '/auth/new-user' // New users will b  

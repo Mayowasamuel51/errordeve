@@ -15,14 +15,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <GoogleTagManager/>
+      <GoogleTagManager />
       <body className={inter.className}>
 
-      <Provider>
+        <Provider>
           <ErrorBoundary fallback={<Error />}>
             {children}
           </ErrorBoundary>
         </Provider>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3685684291051070"
+          crossorigin="anonymous"></script>
       </body>
     </html>
   )
