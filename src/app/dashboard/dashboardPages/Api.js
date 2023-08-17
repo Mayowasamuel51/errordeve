@@ -12,8 +12,8 @@ function Api() {
         required: true,
         onUnauthenticated() {
            
-            // redirect('http://localhost:3000/?callbackUrl=/dashboard')
-            redirect('https://errordeve.vercel.app/?callbackUrl=/dashboard')
+            redirect('http://localhost:3000/?callbackUrl=/dashboard')
+            // redirect('https://errordeve.vercel.app/?callbackUrl=/dashboard')
         }
     })
     const [maindata, setData] = useState([])

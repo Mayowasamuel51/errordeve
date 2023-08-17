@@ -11,14 +11,14 @@ function Home() {
   
     useEffect(() => {
       if (session?.status === 'authenticated') {
-        router('http://localhost:3000/dashboard')
-        // redirect('https://errordeve.vercel.app/dashboard')
+        // router('http://localhost:3000/dashboard')
+        redirect('https://errordeve.vercel.app/dashboard')
       }
     })
   
   const handleSignIn = () => {
-    // signIn('google', { callbackUrl: 'https://errordeve.vercel.app/dashboard' });
-    signIn('google', { callbackUrl: 'http://localhost:3000/dashboard' }); // Initiates the Google login 
+    signIn('google', { callbackUrl: 'https://errordeve.vercel.app/dashboard' });
+    // signIn('google', { callbackUrl: 'http://localhost:3000/dashboard' }); // Initiates the Google login 
   };
 
   return (

@@ -12,8 +12,8 @@ function WebsiteUrl() {
     const { data: session } = useSession({
         required: true,
         onUnauthenticated() {
-            // redirect('https://errordeve.vercel.app/?callbackUrl=/dashboard')
-            redirect('http://localhost:3000/?callbackUrl=/dashboard')
+            redirect('https://errordeve.vercel.app/?callbackUrl=/dashboard')
+            // redirect('http://localhost:3000/?callbackUrl=/dashboard')
             // redirect('https://kingshiptechnologies.com/signin?callbackUrl=/dashboard')
         }
     })

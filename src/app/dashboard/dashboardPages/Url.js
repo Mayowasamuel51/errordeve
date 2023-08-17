@@ -13,7 +13,8 @@ import WebsiteUrl from '../components/WebsiteUrl';
     const { data: session } = useSession({
         required: true,
         onUnauthenticated() {
-            redirect('http://localhost:3000/?callbackUrl=/dashboard')
+            // redirect('http://localhost:3000/?callbackUrl=/dashboard')
+            redirect('https://kingshiptechnologies.com/signin?callbackUrl=/dashboard')
         }
     })
      const [maindata, setData] = useState([])
